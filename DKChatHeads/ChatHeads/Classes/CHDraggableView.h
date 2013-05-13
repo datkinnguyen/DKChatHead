@@ -11,7 +11,7 @@
 @protocol CHDraggableViewDelegate;
 @interface CHDraggableView : UIView
 
-@property (nonatomic, assign) id<CHDraggableViewDelegate> delegate;
+@property (nonatomic, strong) id<CHDraggableViewDelegate> delegate;
 
 - (void)snapViewCenterToPoint:(CGPoint)point edge:(CGRectEdge)edge;
 

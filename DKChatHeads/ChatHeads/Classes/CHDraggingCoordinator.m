@@ -57,7 +57,6 @@ typedef enum {
 @end
 
 @implementation CHDraggingCoordinator
-
 - (id)initWithWindow:(UIWindow *)window draggableViewBounds:(CGRect)bounds
 {
     self = [super init];
