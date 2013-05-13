@@ -44,10 +44,12 @@
     
 }
 
+
+static int counter = 0;
 - (void)didTapLeftItem:(id)sender;
 {
     CHDraggableView *draggableView = [CHDraggableView draggableViewWithImage:[UIImage imageNamed:@"avatar.png"]];
-    draggableView.tag = 1;
+    draggableView.tag = ++counter;
     
     _draggingCoordinator = [[CHDraggingCoordinator alloc] initWithWindow:self.window draggableViewBounds:draggableView.bounds];
     _draggingCoordinator.delegate = self;
